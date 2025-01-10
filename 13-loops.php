@@ -36,4 +36,20 @@ for($i = 1; $i <= 100; $i++) {
 echo '<br>';
 
 
+$clientes = ['Pedro', 'Juan', 'Karen'];
+
+foreach ($clientes as $cliente) {
+    echo $cliente . '<br>';
+};
+
+$cliente = [
+    'Nombre' => 'Pedro',
+    'saldo' => 200,
+    'tipo' => 'Premium'
+];
+
+foreach ($cliente as $key => $value) {
+    echo $key. ': '. $value. '<br>';
+};
+
 include 'includes/footer.php';
